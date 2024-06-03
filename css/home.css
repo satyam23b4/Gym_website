@@ -1,0 +1,101 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 20px; /* Ensure the ul itself has some padding */
+    display: flex;
+    justify-content: center; /* Center the items */
+    gap: 90px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em; /* Increase font size */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.background-image {
+    background-image: url('../images/background_image.avif'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+}
+
+.home-content {
+    margin-top: 100px;
+}
+
+#login {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.login-form {
+    max-width: 400px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+    text-align: left;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-form input,
+.login-form select,
+.login-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #218838;
+}
